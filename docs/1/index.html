@@ -4,22 +4,6 @@
     <meta charset="utf-8">
     <title>JSでradio要素を作る。webpackする。</title>
     <script src="./dist/main.js"></script>
-    <script type="module">
-        window.addEventListener('load', (event) => {
-            RadioTag.parse();
-            // <radio id="color">にchangeイベントを実装する
-            RadioTag.addChangeEventListener('color', ColorRadio.onChange);
-            // チェックボックスに応じてイベント追加・解除する
-            document.querySelector('#is-add-event').addEventListener('change', (event) => {
-                console.log('is-add-event', event);
-                if (event.target.checked) {
-                    Radio.addChangeEventListener('color', ColorRadio.onChange);
-                } else {
-                    Radio.removeChangeEventListener('color', ColorRadio.onChange);
-                }
-            });
-        });
-    </script>
 </head>
 <body>
 <h1><a href="https://github.com/ytyaru/JS.Webpack.Radio.Option.20210126142834">JSでradio要素を作る。webpackする。</a></h1>

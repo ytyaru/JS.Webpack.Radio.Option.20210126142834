@@ -1,4 +1,5 @@
 import Unique from './id/Unique.js';
+import Fieldset from './tag/Fieldset.js';
 import Input from './tag/Input.js';
 import Label from './tag/Label.js';
 export default class FieldsetRadio {
